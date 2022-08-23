@@ -2,7 +2,7 @@
 FROM ubuntu
 
 # Install Nginx
-RUN apt-get -y update && apt-get -y install nginx=1.19.*
+RUN apt-get -y update && apt-get -y install nginx=1.19
 
 # Copy the Nginx config
 COPY default /etc/nginx/sites-available/default
