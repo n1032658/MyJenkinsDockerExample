@@ -21,7 +21,11 @@ stage("build") {
       sh 'docker build -t  mynginx  .'
   }
     }
-	
+	stage("remove containers ") {
+		  steps {
+   sh 'docker rm -f $(docker ps -a -q)'
+		  }
+    }
 	 stage("run") {
 		  steps {
    sh 'docker run --name mynginxcontainer -d -p 80:80 mynginx'
