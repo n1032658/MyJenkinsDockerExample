@@ -46,10 +46,6 @@ stage("build") {
 		}
 	}
 
-	post {
-		always {
-			sh 'docker logout'
-		}
-	}
+
 
 }
