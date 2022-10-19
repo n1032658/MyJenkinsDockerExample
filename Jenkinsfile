@@ -1,4 +1,4 @@
-node('built-In'){
+node('built-in'){
  
  stage('Continuous Download') 
    
