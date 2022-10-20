@@ -18,7 +18,7 @@ pipeline{
 	
 stage("build") {
   steps {
-      sh 'docker build -t  mynginx  .'
+      sh 'docker build -t  mdasari8019/dummyapp:latest  .'
   }
     }
 	stage("remove containers ") {
